@@ -15,19 +15,19 @@ This guide will help you get started with the Plane/No-Plane Transformers Classi
 
 Clone the repository to your local machine (if applicable).
 
-\`\`\`bash
+\```bash
 git clone <repository-url>
 cd <repository-directory>
-\`\`\`
+\```
 
 ### Set Up Virtual Environment
 
 It is recommended to use a virtual environment to manage dependencies. You can set up a virtual environment using \`venv\` or \`virtualenv\`.
 
-\`\`\`bash
+\```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use \`venv\Scripts\activate\`
-\`\`\`
+\```
 
 ### Install Dependencies
 
@@ -35,22 +35,22 @@ Install the required dependencies using \`pip\`. A \`requirements.txt\` file can
 
 First, install \`pipreqs\` if you haven't already:
 
-\`\`\`bash
+\```bash
 pip install pipreqs
-\`\`\`
+\```
 
 Then, convert the notebook to a Python script and generate \`requirements.txt\`:
 
-\`\`\`bash
+\```bash
 jupyter nbconvert --to script plane_no_plane_transformers_classifier.ipynb
 pipreqs /path/to/your/directory
-\`\`\`
+\```
 
 Install the dependencies:
 
-\`\`\`bash
+\```bash
 pip install -r requirements.txt
-\`\`\`
+\```
 
 ## Running the Notebook
 
@@ -58,9 +58,9 @@ pip install -r requirements.txt
 
 Start the Jupyter Notebook server.
 
-\`\`\`bash
+\```bash
 jupyter notebook
-\`\`\`
+\```
 
 ### Open the Notebook
 
@@ -86,13 +86,13 @@ For any questions or issues, please open an issue on the repository or contact t
 
 Since the environment might not have \`pipreqs\` installed, you can generate the \`requirements.txt\` file manually by listing the packages you used in the notebook. Here is a sample \`requirements.txt\` content:
 
-\`\`\`plaintext
+\```plaintext
 numpy
 pandas
 scikit-learn
 matplotlib
 transformers
 torch
-\`\`\`
+\```
 
 Save this content as \`requirements.txt\` in your project directory. Adjust the package list as needed based on the actual imports in your notebook.
